@@ -1,0 +1,92 @@
+#getRoof{
+    padding: 50px 0 20px 0;
+}
+
+#noLogin{
+    color: whitesmoke;
+    text-align: center;
+}
+
+#hasLogin{
+    margin: 0 auto;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 133px;
+    grid-template-rows: 36px 36px;
+}
+
+#achvText{
+    grid-area: 1/1/2/3;
+    justify-self: left;
+    align-self: center;
+}
+
+.backBar{
+    grid-area: 2/1/3/2;
+    justify-self: left;
+    align-self: center;
+    height: 20px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #8d8d8d, #bebebe);
+    position: relative;
+    width: 100%;
+}
+
+.backbar>.bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #cece08, #ffe341);
+    height: 20px;
+    width: 13px;
+}
+
+.backBar>.barText{
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    font-size: 13px;
+    top: 2px;
+    left: 6px;
+    color: black;
+}
+
+.achvTextBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achvTextBox>img{
+    width: 32px;
+    height: auto;
+    margin-right: 1px;
+}
+
+.achvTextBox>div{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 23px;
+}
+
+#achvTable{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 100px 1fr;
+    height: 650px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#achvTabLeft{
+    grid-area: 1/1/3/2;
+    overflow-y: auto;
+}
+
+#achvTabRight{
+    grid-area: 2/2/3/3;
+    overflow-y: auto;
+}
+
+#achvTabRt{
+    grid-area: 1/2/2/3;
+}

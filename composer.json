@@ -1,0 +1,25 @@
+{
+  "name": "gudako/hilichurls-revolt",
+  "description": "//todo description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gudako",
+      "email": "lostbelt@protonmail.com"
+    }
+  ],
+  "require": {
+    "ext-shmop": "*",
+    "ext-mysqli": "*",
+    "ext-openssl": "*",
+    "vladimmi/construct-static": "dev-master@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "classmap": ["scripts"],
+    "files": ["scripts/utils/utils.php", "scripts/init/init.php"]
+  }
+}

@@ -1,0 +1,9 @@
+.layout_outer_board{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: initial;
+    right: initial;
+    margin: 0;
+    padding: 0;
+}

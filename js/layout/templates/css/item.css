@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+
+.item_board{
+    width: 190px; /* Change this to resize */
+    font-size: 220%; /* Change this to resize */
+    height: auto;
+    aspect-ratio: 240 / 300;
+    user-select: none;
+    mask-image: url("/resources/img/game/itemmask.png");
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    -webkit-mask-image: url("/resources/img/game/itemmask.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    overflow: hidden;
+    background-color: #6f7782;
+    font-weight: bold;
+}
+.item_itemback{
+    width: 110%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    opacity: 0.41;
+}
+.item_itembar{
+    width: 100%;
+    height: auto;
+    margin-top: 82%;
+    display: block;
+    position: absolute;
+}
+.item_itemimg{
+    width: 75%;
+    height: auto;
+    position: absolute;
+    top: 8%;
+    left: 12.5%;
+}
+.item_starbar{
+    position: absolute;
+    top: 70.5%;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.item_starbar>img{
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 -0.5%;
+}
+.item_numtext{
+    font-family: 'Padauk',sans-serif;
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 80.5%;
+    color: rgba(0, 0, 0, 0.7);
+}
+.item_border{
+    position: absolute;
+    top: -0.016vw;
+    left: 0;
+    border: 0.275vw rgb(255, 255, 255, 0) solid;
+    border-radius: 4%;
+    height: calc(100% - 0.275vw*2);
+    width: calc(100% - 0.275vw*2 + 0.015vw);
+    transition-duration: 0.2s;
+}
+.item_cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    transition-duration: 0.2s;
+}
+@keyframes item_selected_anim{
+    0%   { border-color: #ffffff; }
+    50%  { border-color: #fffcc0; }
+    100% { border-color: #ffffff; }
+}
+.item_board[data-selected="true"]>.item_border{
+    animation: item_selected_anim 1.4s infinite;
+}
+.item_board[data-selected="true"]>.item_cover,
+.item_board[data-interface~="clickable"]:hover>.item_cover{
+    background-color: rgba(245, 245, 245, 0.15);
+}
+.item_board[data-selected="true"][data-interface~="clickable"]:hover>.item_border{
+    animation: none;
+    border-color: #fffcc0;
+}
+.item_board[data-selected="true"][data-interface~="clickable"]:hover>.item_cover{
+    background-color: rgba(174, 174, 174, 0.15);
+}

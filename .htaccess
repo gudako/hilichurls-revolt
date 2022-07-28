@@ -1,0 +1,29 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} !([^.]+)\/pages/deny.php [NC]
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ - [NC,L,R=404]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/(achievements|handbook|mainpage|error)$ [NC]
+RewriteRule ^ /pages/%1 [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/server$ [NC]
+RewriteRule ^ /pages/server/server [NC,L]
+
+RewriteCond %{REQUEST_URI} ^/(403|404)$ [NC]
+RewriteRule ^ /pages/deny?code=%1 [NC,L]
+
+Redirect /index /
+Redirect /mainpage /
+
+Order deny,allow
+<FilesMatch ".+\.(json|lock)$">
+Deny from all
+</FilesMatch>
+
+ErrorDocument 403 /pages/deny?code=403
+ErrorDocument 404 /pages/deny?code=404

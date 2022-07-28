@@ -1,0 +1,96 @@
+#window_modal_back{
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 14px;
+    z-index: 98;
+    color: black;
+}
+
+#window{
+    width: 60%;
+    max-width: 440px;
+    display: block;
+    margin: auto;
+    position: relative;
+    border: 1px #02021c solid;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+
+@media only screen and (max-width: 585px) {
+    #window{
+        width: 70%;
+    }
+}
+
+#window_title_box{
+    display: flex;
+    padding: 8px 10px;
+    margin: 2px 0;
+    font-size: 16px;
+    align-items: center;
+    font-weight: bold;
+    background-color: #bbffff;
+}
+
+#window_title_separator{
+    display: block;
+    width: 100%;
+    background-color: #02021c;
+    height: 1px;
+    margin-top: -3px;
+}
+
+#window_close_button{
+    margin-left: auto;
+    transition-duration: 0.15s;
+    user-select: none;
+}
+
+#window_close_button>img{
+    width: 17px;
+    height: auto;
+}
+
+#window_close_button:hover{
+    opacity: 0.6;
+}
+
+#window_close_button:active{
+    opacity: 0.4;
+}
+
+#window_content_box{
+    display: block;
+    margin: 16px 14px;
+}
+
+.window_press_button{
+    border-radius: 3px;
+    padding: 4px 12px;
+    background-color: #dedede;
+    color: #02021c;
+    display: inline-flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.window_press_button:hover{
+    background-color: #cbcbcb;
+}
+
+.window_press_button:active{
+    background: linear-gradient(0deg, #d0d0d0, #c0c0c0);
+}

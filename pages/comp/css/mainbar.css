@@ -1,0 +1,176 @@
+#mainbar{
+    display: flex;
+    padding: 7px 0 5px 0;
+    justify-content: flex-end;
+    background-color: #00554e;
+    color: whitesmoke;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    box-shadow: 0 5px 3px #004444;
+    max-width: 1006px;
+    margin: 0 auto;
+    border-left: 3px white solid;
+    border-right: 3px white solid;
+}
+
+#mainbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#mainbar>a.mainbar_normal, #mainbar_menu_button{
+    padding: 10px 7px;
+    margin: 0 7px;
+    transition-duration: 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+#mainbar>a.mainbar_normal>img, #mainbar_login_button>img, #mainbar_menu_button>img{
+    height: 17px;
+    width: auto;
+    margin-right: 5px;
+}
+
+#mainbar>a.mainbar_normal:hover, #mainbar_menu_button:hover{
+    background-color: #00695f;
+}
+
+#mainbar>a.mainbar_normal:active, #mainbar_menu_button:active{
+    background-color: #009184;
+}
+
+#mainbar_menu_button[opened], #mainbar_menu>a.mainbar_normal, #mainbar_menu{
+    background-color: #008b9d;
+}
+
+#mainbar_menu_button[opened]:hover, #mainbar_menu>a.mainbar_normal:hover{
+    background-color: #07a8be;
+}
+
+#mainbar_menu_button[opened]:active, #mainbar_menu>a.mainbar_normal:active{
+    background-color: #17bdd5;
+}
+
+#mainbar_login_button{
+    border-radius: 3px;
+    padding: 6px 16px;
+    background-color: #9af1f1;
+    margin: 0 20px 0 16px;
+    color: #02021c;
+    display: inline-flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+#mainbar_login_button:hover{
+    background-color: #89e0e0;
+}
+
+#mainbar_login_button:active{
+    background: linear-gradient(0deg, #6fe2e2, #4e9c9c);
+}
+
+#mainbar_logo{
+    height: 120px;
+    width: auto;
+    margin: -30px auto -30px 15px;
+    position: relative;
+    top: 10px;
+}
+
+#mainbar_langselect{
+    margin: 0 15px 0 4px;
+}
+
+#mainbar_menu_button{
+    display: none;
+}
+
+#mainbar_menu{
+    display: none;
+}
+
+#mainbar_menu_setlang{
+    user-select: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    #mainbar{
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    #mainbar>a.mainbar_normal{
+        display: none;
+    }
+
+    #mainbar_menu_button{
+        display: inline;
+        cursor: pointer;
+    }
+
+    #mainbar_menu_button>img{
+        height: 20px;
+        margin-right: 0;
+    }
+
+    #mainbar_langselect{
+        display: none;
+    }
+
+    /*for the top list dropdown menu*/
+    #mainbar_menu{
+        display: block;
+        position: absolute;
+        width: 130px;
+        left: 0;
+        top: 0;
+        box-shadow: 3px 3px rgba(136, 136, 136, 0.53);
+    }
+
+    #mainbar_menu>a.mainbar_normal{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+
+    #mainbar_menu>a.mainbar_normal>img{
+        height: 14px;
+        width: auto;
+    }
+
+    #mainbar_menu>a.mainbar_normal>span{
+        margin-left: auto;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    #mainbar_login_button{
+        margin: 0 13px 0 5px;
+    }
+
+    #mainbar_login_button>img{
+        display: none;
+    }
+
+    #mainbar_logo{
+        margin-left: 5px;
+    }
+
+    #mainbar_menu{
+        width: 120px;
+    }
+}

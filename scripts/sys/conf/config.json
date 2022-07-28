@@ -1,0 +1,50 @@
+{
+  "mode_debug": true,
+  "char_linebreak": "\r\n",
+
+  "db_root_name": "Lappland&&Texas??!",
+  "db_username": "root",
+  "db_password": "root",
+  "db_schema": "hilichurls_revolt",
+
+  "all_lang": ["en", "zh"],
+  "lang_cookie_lifespan": 15552000,
+  "session_lifespan": 3600,
+
+  "log_slot_lifespan": 600,
+  "log_slot_max_count": 6,
+  "log_encrypt_key": "Lappland is NO.1 under the sky!!",
+  "email_report_to": "lostbelt@protonmail.com",
+
+  "shmop_main_id": 23333,
+  "imem_lang": {
+    "hid": 1,
+    "buckets": 10000,
+    "size": 250000,
+    "loi_size": 2
+  },
+  "imem_trophy": {
+    "hid": 2,
+    "buckets": 1000,
+    "size": 75000,
+    "csi_size": 2,
+    "casi_size": 2,
+    "isi_size": 2
+  },
+  "imem_item": {
+    "hid": 3,
+    "buckets": 2000,
+    "size": 40000
+  },
+  "imem_char": {
+    "hid": 4,
+    "buckets": 500,
+    "size": 10000
+  },
+  "imem_status": {
+    "hid": 5,
+    "buckets": 250,
+    "size": 7500
+  }
+
+}

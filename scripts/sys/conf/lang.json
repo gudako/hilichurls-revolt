@@ -1,0 +1,118 @@
+{
+  "game_name": {
+    "en": "Hilichurls Revolt",
+    "zh": "丘丘人的反抗"
+  },
+  "maintenance_alert_title": {
+    "en": "Server under maintenance",
+    "zh": "服务器正在维护"
+  },
+  "mainbar_mainpage": {
+    "en": "Main Page",
+    "zh": "游戏首页"
+  },
+  "mainbar_achievements": {
+    "en": "ACHVs",
+    "zh": "所有成就"
+  },
+  "mainbar_handbook": {
+    "en": "Handbook",
+    "zh": "生物图鉴"
+  },
+  "mainbar_play": {
+    "en": "Play Now!",
+    "zh": "开始游戏!"
+  },
+  "mainbar_menu_change_lang": {
+    "en": "Set language",
+    "zh": "变更游戏语言"
+  },
+  "setlang_window_title": {
+    "en": "Change Language",
+    "zh": "更改游戏语言"
+  },
+  "setlang_window_content": {
+    "en": "Change the current language to:",
+    "zh": "将当前语言变更为："
+  },
+  "common_confirm": {
+    "en": "Confirm",
+    "zh": "确认"
+  },
+  "common_cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+  },
+  "maintenance_issued_alert": {
+    "en": "Notice: Server Maintenance after %H hr %I min",
+    "zh": "注意：服务器将会在 %H 小时 %I 分钟后进入维护状态"
+  },
+  "pages_js_alert_text": {
+    "en": "JavaScript is not enabled<br>Turn ON JavaScript to continue",
+    "zh": "JavaScript 未被启用<br>启用 JavaScript 以继续浏览"
+  },
+  "mainpage_bar1_text": {
+    "en": "Help us FIGHT BACK the \"<font color='yellow'>Traveller</font>\"",
+    "zh": "帮助我们对\"<font color='yellow'>旅行者</font>\"<br>...发起反击!"
+  },
+  "mainpage_bar2_text": {
+    "en": "We are the hilichurls, ordinary residents in Teyvat.",
+    "zh": "我们是丘丘人，提瓦特大陆的原始住民。"
+  },
+  "mainpage_bar3_text1": {
+    "en": "500 years ago, we were natives in a big kingdom<br>named Khaenri'ah.",
+    "zh": "<br>五百余年前，我们曾一同生活在名为坎瑞亚的国度里。"
+  },
+  "mainpage_bar3_text2": {
+    "en": "...And we're now<br>the <font color=\"red\" font-weight=bold>Caused</font> in that disaster.",
+    "zh": "而我们也是坎瑞亚灾难中... <br>遭受<font color=\"red\" font-weight=bold>诅咒</font>的人。"
+  },
+  "mainpage_bar4_text": {
+    "en": "Khaenri'ah was an irreligious country starting 2000 years ago and ending 500 years ago.<br><br>500 years ago, the \"Heavenly Principles\" inflicted a catastrophe on us, destroyed our country, and turned us citizens into hilichurls.<br><br>On the ruins of Khaenri'ah, They created seven new lands ruled by seven Gods they designated......<br><br>Their faith... built on our tragedies.",
+    "zh": "坎瑞亚是一个从2000年前开始到500年前结束的国家，曾经没有任何神明的信仰。<br><br>500年前，名为“天理”的存在 给我们降下了灾难，摧毁了我们的国家，并把我们公民变成了山丘上野人的相貌。<br><br>在坎瑞亚王国的废墟上，他们创造了由他们指定的七位神统治的七块新土地......<br><br>他们的信仰......建立在我们的悲剧之上。"
+  },
+  "mainpage_bar5_text1": {
+    "en": "And even her, the Khaenri'ah's princess",
+    "zh": "....甚至连她，....坎瑞亚王国曾经的公主"
+  },
+  "mainpage_bar5_text2": {
+    "en": "has <font color=\"red\" font-weight=bold>BETRAYED</font> us.",
+    "zh": "也<font color=\"red\" font-weight=bold>背叛</font>了我们。"
+  },
+  "mainpage_bar5_text3": {
+    "en": "She is now the <font color=\"yellow\">Traveller</font> in Teyvat, killing countless of our compatriots with her fellows, and with her own blade.",
+    "zh": "她现在是提瓦特大陆的<font color=\"yellow\">旅行者</font>，<br>与她的同伴，以及她自己的利刃，....杀害了无数的我们的同族。"
+  },
+  "mainpage_bar6_text": {
+    "en": "No longer enduring.<br>No longer hiding.<br>Take our right of life back,<br>With this <font color=\"red\" font-weight=bold>REVOLT</font>.",
+    "zh": "不再忍受压迫。<br>不必隐匿身形。<br>我们将夺回生存的权利，<br>以此发起<font color=\"red\" font-weight=bold>抗争</font>。"
+  },
+  "mainpage_slime_complaint!": {
+    "en": "slime: you s**t throwing me",
+    "zh": "史莱姆：我*****你扔我"
+  },
+  "mainpage_play_login": {
+    "en": "Let the fight begin.",
+    "zh": "开始我们的抗争"
+  },
+  "mainpage_play_continue": {
+    "en": "Continue our Fight.",
+    "zh": "继续我们的抗争"
+  },
+  "mainpage_credit": {
+    "en": "potentially out of character?",
+    "zh": "可能超出原作设定？"
+  },
+  "achievements_title_suffix": {
+    "en": "Achievements",
+    "zh": "成就"
+  },
+  "achv_an_goodorbad": {
+    "en": "teedstes",
+    "zh": "trwearsdgf"
+  },
+  "an_tuyiytfd34534": {
+    "en": "teeddstes",
+    "zh": "trweardsdgf"
+  }
+}

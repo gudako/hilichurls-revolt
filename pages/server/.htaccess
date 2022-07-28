@@ -1,0 +1,4 @@
+Order deny,allow
+<FilesMatch "^server\w+\.php$">
+Deny from all
+</FilesMatch>
